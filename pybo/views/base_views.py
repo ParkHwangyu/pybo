@@ -5,7 +5,7 @@ from django.db.models import Q
 from ..models import Question
 
 import logging
-logger = logging.getLogger('__name__')  # '__name__' = 'pybo'  pybo.views.base_views 모듈명이므로 대체하여 사용가능
+logger = logging.getLogger(__name__)  # __name__ = 'pybo'  pybo.views.base_views 모듈명이므로 대체하여 사용가능
 
 
 def index(request):
